@@ -8,7 +8,6 @@ WORKDIR /app
 COPY go.mod go.sum ./
 
 RUN go mod download
-#RUN go mod tidy
 
 # Копируем исходный код
 COPY . .
